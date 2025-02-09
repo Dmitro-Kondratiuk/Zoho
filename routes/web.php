@@ -11,10 +11,6 @@ Route::get('/zoho/auth', [ZohoAuthController::class, 'zohoAuth'])->name('zoho.au
 Route::middleware(TokenVerificationMiddleware::class)->group(function () {
     Route::get('/', [ZohoController::class, 'index'])->name('welcome');
     Route::get('/getUserZoho', [ZohoAuthController::class, 'getUserZohoDN'])->name('getUserZoho');
-
-
-});
-Route::middleware(TokenVerificationMiddleware::class)->group(function () {
     Route::prefix('api')->group(function () {
         Route::get('/getDeals', [ZohoController::class, 'getDeals']);
         Route::get('/getAccounts', [ZohoController::class, 'getAccounts']);
@@ -22,4 +18,5 @@ Route::middleware(TokenVerificationMiddleware::class)->group(function () {
         Route::post('/createAccount', [ZohoController::class, 'createAccount'])->name('createAccount');
     });
 });
+
 
