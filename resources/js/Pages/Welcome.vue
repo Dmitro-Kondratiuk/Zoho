@@ -49,7 +49,7 @@ const propsDeal = defineProps({
     font-size: 1.2rem;
 }
 
-/* Стилі для інпутів та кнопок */
+
 .input-custom {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -81,7 +81,7 @@ const propsDeal = defineProps({
     border-color: #6c757d;
 }
 
-/* Модальне вікно */
+
 .modal-dialog {
     width: 50%;
     margin: 0 auto;
@@ -107,13 +107,13 @@ const propsDeal = defineProps({
     padding: 20px;
 }
 
-/* Привидений фон для модального вікна */
+
 .modal-backdrop {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1040;
 }
 
-/* Покращення відступів та стилів таблиці */
+
 .table-responsive {
     margin-top: 20px;
     overflow-x: auto;

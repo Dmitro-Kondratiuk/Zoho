@@ -7,7 +7,6 @@
             </button>
         </div>
 
-        <!-- Модальне вікно для додавання акаунту -->
         <div v-if="showAddAccountModal" class="modal fade show" id="addAccountModal" tabindex="-1" aria-labelledby="addAccountModalLabel" aria-hidden="true" style="display: block;">
             <div class="modal-dialog" style="width: 50%; margin: 0 auto;">
                 <div class="modal-content shadow-lg">
@@ -46,10 +45,8 @@
             </div>
         </div>
 
-        <!-- Привидений фон для модального вікна -->
         <div v-if="showAddAccountModal" class="modal-backdrop fade show"></div>
 
-        <!-- Таблиця акаунтів -->
         <div v-if="accounts.length" class="table-responsive mt-5">
             <table class="table table-bordered table-hover" style="width: 100%;">
                 <thead class="table-dark">
