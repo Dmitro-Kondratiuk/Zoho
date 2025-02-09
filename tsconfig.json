@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "esnext",                   // Вибір версії JavaScript для вихідного коду
+        "module": "esnext",                   // Вибір модуля для компіляції
+        "moduleResolution": "node",           // Як шукати модулі
+        "strict": true,                       // Включення всіх строгих перевірок (рекомендується)
+        "noImplicitAny": true,                // Включає перевірку на явне визначення типів
+        "esModuleInterop": true,              // Дозволяє імпортувати CommonJS модулі
+        "skipLibCheck": true,                 // Пропускає перевірку типів у бібліотеках
+        "forceConsistentCasingInFileNames": true,  // Забезпечує послідовне використання регістру в іменах файлів
+        "resolveJsonModule": true             // Дозволяє імпортувати JSON файли
+    },
+    "include": [
+        "resources/js/**/*",                  // Включити всі файли в папці resources/js
+        "node_modules/vue/types/vue.d.ts"     // Включити типи Vue
+    ],
+    "exclude": [
+        "node_modules"                         // Виключити node_modules
+    ]
+}
