@@ -125,7 +125,7 @@ const addDeal = async () => {
     try {
         const response = await axios.post('/api/createDeal', newDeal.value);
         if (response.status === 201) {
-            const getResponse = await axios.get('/api/getAccount')
+          const getResponse = await axios.get('/api/getDeals')
             deals.value = getResponse.data
             alert(response.data.message);
 
